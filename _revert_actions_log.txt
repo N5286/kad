@@ -1,0 +1,7 @@
+Revert actions performed:
+- Backed up index.html -> _revert_backup_index.html
+- Backed up css -> _revert_backup_css
+- Backed up style.css -> _revert_backup_style.css
+- Restored index.html to original
+- Restored css to original formatting
+- Deleted style.css
