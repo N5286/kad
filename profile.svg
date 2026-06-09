@@ -1,18 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
   <defs>
-    <style>
-      .profile-bg { fill: #f0f0f0; }
-      .profile-circle { fill: #e0e0e0; }
-      .profile-text { font-family: Arial, sans-serif; font-size: 24px; fill: #333; text-anchor: middle; }
-    </style>
+    <clipPath id="circle-clip">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
   </defs>
   
-  <!-- Background -->
-  <rect width="200" height="200" class="profile-bg"/>
+  <!-- Embed ken2.png in a circle -->
+  <image x="10" y="10" width="180" height="180" xlink:href="ken2.png" clip-path="url(#circle-clip)"/>
   
-  <!-- Profile circle -->
-  <circle cx="100" cy="100" r="90" class="profile-circle"/>
-  
-  <!-- Placeholder text -->
-  <text x="100" y="110" class="profile-text">Profile</text>
+  <!-- Optional: Add a border circle -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ddd" stroke-width="2"/>
 </svg>
